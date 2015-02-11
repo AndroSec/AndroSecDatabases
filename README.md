@@ -25,6 +25,24 @@ Contains E-R Digrams for the AndroSecData.sqlite DB
 This contains the SQLite database containing the following tables:
 
 
+Android_Manifest_AppInfo: Stores information about each application where we are analyzing the AndroidManifest.xml files.
+
+
+Android_Manifest_CommitInfo: Stores commit information for each AndroidManifest.xml file.
+
+
+Android_Manifest_Intent: Stores 'master' list of all intents used in all AndroidManifest.xml files.
+
+
+Android_Manifest_Intent_Join: Joins 'master' list of intents with the commit.
+
+
+Android_Manifest_Permission: Stores 'master list' of all permissions found in AndroidManifest.xml files
+
+
+Android_Manifest_Permission_join: Joins permission 'master list' with each commit. This table may be queried to discover all permissions used for any Android application and its commits.
+
+
 AndroRiskRun: Information used by tools for analysis
 
 AppData: Information pertaining to the overall app being examined including name, category and source code location.
