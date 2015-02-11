@@ -1,4 +1,26 @@
-# Databases
+There are several items in this directory:
+
+- ManifestFiles.zip
+- E-R Diagrams
+- AndrosecData.sqlite
+
+These are described below:
+
+
+# ManifestFiles.zip
+This directory contains AndroidManifest files for all recorded commits from open source Android applications stored on the F-Droid website.
+
+Each folder in the top level directory represents a different app. For example, the directory 'aarddict.android' represents one Android app. More information about each app including its name, and website may found in the .sqlite database file which may be downloaded from this research project's repository using information from the "name" column in the appData table. 
+
+Inside of each folder, all commits made to the project where the AndroidManifest.xml file was altered are stored. Correlating information for each of these commits may be found in in the .sqlite database in the "Android_Manifest_CommitInfo" table in the "commit_val" column. The AndroidManifest.xml file may be found inside of this commit directory.
+
+# E-R Diagrams
+Contains E-R Digrams for the AndroSecData.sqlite DB
+
+
+
+
+# AndrosecData.sqlite
 
 This contains the SQLite database containing the following tables:
 
